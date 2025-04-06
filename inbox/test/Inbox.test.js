@@ -42,7 +42,7 @@ describe('Inbox', ()=> {
 
     it("has a defalut menssage", async () =>{
         const message = await inbox.methods.message().call();
-        assert.equal(message, "hi there!");
+        assert.equal(message, "hi there");
     });
 
     it("can change the message", async () =>{
