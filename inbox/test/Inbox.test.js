@@ -14,7 +14,7 @@ const { interface , bytecode } = require('../compile');
 //         return "zoooom";
 //     }
 // }
-const message1 = "hi there!";
+const message1 = "hi there";
 let accounts;
 let inbox;
 
