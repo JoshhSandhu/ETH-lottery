@@ -5,7 +5,7 @@ const { interface , bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
     "path bronze virus spice alter liquid float own chef oppose party meat",
-    "https://holesky.infura.io/v3/a783691c9e0449b697d5236a80763666"
+    "https://sepolia.infura.io/v3/a783691c9e0449b697d5236a80763666"
 );
 const web3 = new Web3(provider);
 
