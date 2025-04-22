@@ -2,8 +2,8 @@ const path = require("path");
 const fs = require("fs");
 const solc = require("solc");
 
-const inboxPath = path.resolve(__dirname, "contracts", "Inbox.sol");
-const source = fs.readFileSync(inboxPath, "utf8");
+const lotteryPath = path.resolve(__dirname, "contracts", "Lottery.sol");
+const source = fs.readFileSync(lotteryPath, "utf8");
 
 /***
  * The recommended way to interface with the Solidity compiler, especially for more
@@ -18,7 +18,7 @@ const input = {
     // Each Solidity source file to be compiled must be specified by defining either
     // a URL to the file or the literal file content.
     // See https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description
-    "Inbox.sol": {
+    "Lottery.sol": {
       content: source
     }
   },
@@ -36,4 +36,4 @@ const input = {
 
 const output = JSON.parse(solc.compile(JSON.stringify(input)));
 
-module.exports = output.contracts["Inbox.sol"].Inbox;
+module.exports = output.contracts["Lottery.sol"].Lottery;
