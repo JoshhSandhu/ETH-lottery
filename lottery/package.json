@@ -1,7 +1,7 @@
 {
-  "name": "inbox-updated",
+  "name": "lottery",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "compile.js",
   "scripts": {
     "test": "mocha"
   },
@@ -13,7 +13,7 @@
     "@truffle/hdwallet-provider": "2.1.15",
     "ganache": "7.9.2",
     "mocha": "11.1.0",
-    "solc": "0.8.19",
+    "solc": "^0.8.19",
     "web3": "4.16.0"
   }
 }
